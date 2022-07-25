@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('categories')){
+        if(!Schema::hasTable('products')){
             Schema::create('products', function (Blueprint $table) {
                 $table->increments("id");
                 $table->string("name");
